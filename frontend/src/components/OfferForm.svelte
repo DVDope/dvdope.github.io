@@ -48,7 +48,7 @@
         }
         */
 
-        const res = await fetch('http://127.0.0.1:3000/addUser', {
+        const res = await fetch('http://147.142.19.55:3000/addUser', {
             headers: {'Content-Type': 'application/json'},
             method: 'POST',
             // body: JSON.stringify({"abc": {location}})

@@ -1,6 +1,6 @@
 <script>
 	async function getUsers() {
-		const res = await fetch('http://127.0.0.1:3000/queryUsers', {
+		const res = await fetch('http://147.142.19.55:3000/queryUsers', {
 			method: 'POST'
 		});
 		const text = await res.json();
