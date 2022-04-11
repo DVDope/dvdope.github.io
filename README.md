@@ -34,9 +34,15 @@ The deno backend should be connected to a MySQL database.
 
 #### Run deno Backend
 
-`deno run --allow-net --allow-read .\server.ts`
+`deno run --allow-net --allow-read .\server.ts 443`
 
 ## Where to reach the server
 
-TODO: Publish website
+https://dvdope.github.io/
 
+## Future improvements
+
+* Complete Repo
+* Put server.ts into docker container
+* Show password to delete entry after creation
+* Delete entries after n days
