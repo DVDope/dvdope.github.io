@@ -36,30 +36,9 @@
 
         let amount_str = String(amount)
 
-
-        /*
-        if (seller == undefined && buyer == '') {
-            kindOfOffer = 'buyer';
-        } else if (seller == '' && buyer == undefined) {
-            kindOfOffer = 'seller';
-        } else {
-            console.log("No kind of offer specified!");
-            return 1;
-        }
-        */
-
-        const res = await fetch('http://147.142.19.55:3000/addUser', {
+        const res = await fetch('https://jw-lab.physi.uni-heidelberg.de/addUser', {
             headers: {'Content-Type': 'application/json'},
             method: 'POST',
-            // body: JSON.stringify({"abc": {location}})
-            // TODO: Replace hardcoded strings with variables
-            /*
-            body: JSON.stringify({"pair": {pair},
-                            "amount": {amount},
-                            "location": {location},
-                            "contact": {contact},
-                            "kindOfOffer": "seller"})
-            */
             body: JSON.stringify({"pair": {pair},
                             "amount": amount_str,
                             "location": {location},
